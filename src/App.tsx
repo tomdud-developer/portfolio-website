@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
 import NavBar from "./components/Navbar";
 import Stack from '@mui/material/Stack';
@@ -8,6 +8,7 @@ import {blue, grey, red, teal, yellow} from "@mui/material/colors";
 import SectionOne from "./components/SectionOne/SectionOne";
 import SectionTwo from "./components/SectionTwo/SectionTwo";
 import ContactSection from "./components/ContactSection/ContactSection";
+import {Container, Slide} from "@mui/material";
 
 const theme = createTheme({
     palette: {
@@ -80,6 +81,11 @@ const theme = createTheme({
 });
 
 function App() {
+    const [checked, setChecked] = React.useState(false);
+    React.useEffect(() => {
+        setChecked(true);
+    }, []);
+
   return (
       <ThemeProvider theme={theme}>
         <Box
@@ -96,9 +102,16 @@ function App() {
                         }
                     }
                 >
-                    <SectionOne />
-                    <SectionTwo />
+                    <Box>
+                        <SectionOne />
+                    </Box>
+                    <Box>
+                        <SectionTwo />
+                    </Box>
+
+
                     <ContactSection />
+
                 </Box>
 
             </Stack>

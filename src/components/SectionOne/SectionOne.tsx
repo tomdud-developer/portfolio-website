@@ -4,7 +4,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
-import {Avatar, Container, Divider, Hidden} from "@mui/material";
+import {Avatar, Container, Divider, Hidden, Slide} from "@mui/material";
 import Stack from "@mui/material/Stack";
 import {aboutMeText} from "../texts";
 
@@ -19,11 +19,12 @@ const Item = styled(Paper)(({ theme }) => ({
 //sx={{alignItems:"center", justifyContent: "center", display:"flex"}}
 const SectionOne: React.FC = () => {
     return (
-        <Container sx={{maxWidth: "80%", minWidth: "80%"}}>
+        <Container sx={{maxWidth: "90%", minWidth: "90%"}}>
             {//<Typography variant='h2' margin='10px'>About me</Typography>
             }
             <Grid container spacing={5} columns={{xs: 5, sm: 5, md: 10}}>
                 <Grid xs={4}>
+                    <Slide direction="right" in={true} style={{ transitionDelay: '1500ms', transitionDuration: '1000ms'}} mountOnEnter unmountOnExit>
                     <Item>
                         <Stack spacing={2} sx={{alignItems:"center", justifyContent: "center", display:"flex"}}>
                             <Typography variant='h4'>
@@ -32,7 +33,7 @@ const SectionOne: React.FC = () => {
                             </Typography>
                             <Avatar
                                 alt="Tom Dudzik"
-                                src="/avatar_1.jpg"
+                                src="avatar_1.jpg"
                                 sx={{width: '70%', height: "auto", border: '5px solid gold'}}
                                 sizes='100% width'
                             />
@@ -40,8 +41,10 @@ const SectionOne: React.FC = () => {
                             <Typography variant='h5'>with solid Java backend</Typography>
                         </Stack>
                     </Item>
+                    </Slide>
                 </Grid>
                 <Grid xs={6}>
+                    <Slide direction="left" in={true} style={{ transitionDelay: '1500ms', transitionDuration: '1000ms'}} mountOnEnter unmountOnExit>
                     <Item>
                         <Stack spacing={2} sx={{alignItems:"center", justifyContent: "center", display:"flex"}}>
                             <Typography variant='h4'>
@@ -52,6 +55,7 @@ const SectionOne: React.FC = () => {
                             </Typography>
                         </Stack>
                     </Item>
+                    </Slide>
                 </Grid>
             </Grid>
         </Container>
