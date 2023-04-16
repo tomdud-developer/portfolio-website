@@ -13,7 +13,7 @@ const theme = createTheme({
     palette: {
         mode: 'dark',
         primary: {
-            main: yellow[400],
+            main: '#F4D03F',
         },
         secondary: {
             main: teal[500],
@@ -88,9 +88,7 @@ function App() {
             minHeight={'100%'}
         >
             <Stack>
-                <Box>
-                    <NavBar />
-                </Box>
+
                 <Box
                     sx = {
                         {

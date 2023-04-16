@@ -10,7 +10,7 @@ import IconButton from '@mui/material/IconButton';
 export default function NavBar() {
     return (
         <Box sx={{ flexGrow: 1, height: '64px' }}>
-            <AppBar position="fixed">
+            <AppBar position="fixed" sx={{width: '100%'}}>
                 <Toolbar>
                     <IconButton
                         size="large"

@@ -8,7 +8,9 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import ProjectTab from "./ProjectTab";
+import ProjectTab from "./projects/ProjectTab";
+import OurKitchenYourHealthProject from "./projects/OurKitchenYourHealthProject";
+import SpeedReadingAppProject from "./projects/SpeedReadingAppProject";
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -59,10 +61,18 @@ const SectionTwo: React.FC = () => {
     };
 
     return (
-        <Container>
-            <Typography variant='h2' >Projects</Typography>
+        <Container sx={{maxWidth: "80%", minWidth: "80%"}}>
+            <Typography variant='h2' width='100%' margin='10px'>Projects</Typography>
             <Paper
-                sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 600, padding: 2 }}
+                sx={{
+                    flexGrow: 1,
+                    bgcolor: 'background.paper',
+                    display: 'flex',
+                    height: 600,
+                    padding: 2,
+                    borderRadius: '20px',
+                    boxShadow: '5px 5px 5px rgba(0, 0, 0, 0.3)',
+                }}
             >
                 <Tabs
                     orientation="vertical"
@@ -73,7 +83,7 @@ const SectionTwo: React.FC = () => {
                     sx={{ borderRight: 1, borderColor: 'divider' }}
                 >
                     <StyledTab label="Our Kitchen Your Health" {...a11yProps(0)} />
-                    <StyledTab label="Item Two" {...a11yProps(1)} />
+                    <StyledTab label="Speed Reading App" {...a11yProps(1)} />
                     <StyledTab label="Item Three" {...a11yProps(2)} />
                     <StyledTab label="Item Four" {...a11yProps(3)} />
                     <StyledTab label="Item Five" {...a11yProps(4)} />
@@ -81,16 +91,14 @@ const SectionTwo: React.FC = () => {
                     <StyledTab label="Item Seven" {...a11yProps(6)} />
                 </Tabs>
                 <TabPanel value={value} index={0}>
-                    Our Kitchen Your Health
-                    <ProjectTab />
+                    <OurKitchenYourHealthProject />
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    Item Two
-                    <ProjectTab />
+                    <SpeedReadingAppProject />
                 </TabPanel>
                 <TabPanel value={value} index={2}>
                     Item Three
-                    <ProjectTab />
+
                 </TabPanel>
                 <TabPanel value={value} index={3}>
                     Item Four
