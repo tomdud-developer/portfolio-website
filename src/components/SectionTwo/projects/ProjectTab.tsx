@@ -42,8 +42,9 @@ interface ProjectTabProps {
     technologies?: React.ReactNode;
     screenshots?: Array<any>;
     githubLink?: String;
+    githubLink2?: String;
 }
-export default function ProjectTab({description,technologies, screenshots, githubLink}: ProjectTabProps) {
+export default function ProjectTab({description,technologies, screenshots, githubLink, githubLink2}: ProjectTabProps) {
 
     const [value, setValue] = React.useState(0);
 
@@ -113,6 +114,10 @@ export default function ProjectTab({description,technologies, screenshots, githu
                     <Link href={githubLink.toString()} target="_blank" rel="noopener" underline="hover">
                         {githubLink}
                     </Link>
+                    {githubLink2 &&
+                        <Link href={githubLink2.toString()} target="_blank" rel="noopener" underline="hover">
+                        {githubLink2}
+                    </Link>}
                 </Stack>
             </TabPanel>}
 

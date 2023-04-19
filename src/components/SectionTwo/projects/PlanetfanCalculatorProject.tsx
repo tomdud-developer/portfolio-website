@@ -19,7 +19,7 @@ export default function PlanetfanCalculatorProject() {
             <Zoom>
                 <img src={require('./../../../assets/images/PlanetfanCalculatorProject/PlanetfanCalculatorProject_main_image.png')} width={'400px'}/>
             </Zoom>
-            <Typography variant='h5' align='left'>Features:</Typography>
+            <Typography variant='h5' align='left' marginTop='20px' color='primary'>Features:</Typography>
             {projects_PlanetfanCalculator_description_fetures_list}
         </Container>
       )
