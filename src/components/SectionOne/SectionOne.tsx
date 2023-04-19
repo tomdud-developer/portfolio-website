@@ -8,6 +8,8 @@ import {Avatar, Container, Divider, Hidden, Slide} from "@mui/material";
 import Stack from "@mui/material/Stack";
 import {aboutMeText} from "../texts";
 
+
+
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: 'background.paper',
     ...theme.typography.body2,
@@ -35,6 +37,11 @@ const SectionOne: React.FC = () => {
                                 alt="Tom Dudzik"
                                 src="avatar_1.jpg"
                                 sx={{width: '70%', height: "auto", border: '5px solid gold'}}
+                                sizes='100% width'
+                            />
+                            <img
+                                alt="Tom Dudzik"
+                                src="./avatar_1.jpg"
                                 sizes='100% width'
                             />
                             <Typography variant='h4' >Full-Stack Developer</Typography>
