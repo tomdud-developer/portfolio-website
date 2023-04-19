@@ -3,6 +3,8 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Typography from "@mui/material/Typography";
+import Zoom from "react-medium-image-zoom";
+import {ImageList, ImageListItem} from "@mui/material";
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -31,9 +33,10 @@ function TabPanel(props: TabPanelProps) {
     );
 }
 interface ProjectTabProps {
+    screenshots: Array<any>;
     description: React.ReactNode;
 }
-export default function ProjectTab({ description }: ProjectTabProps) {
+export default function ProjectTab({description, screenshots}: ProjectTabProps) {
 
     const [value, setValue] = React.useState(0);
 
@@ -53,7 +56,7 @@ export default function ProjectTab({ description }: ProjectTabProps) {
             >
                 <Tab value={0} label="Description" />
                 <Tab value={1} label="Technologies" />
-                <Tab value={2} label="Item Three" />
+                <Tab value={2} label="Screenshots" />
             </Tabs>
             <TabPanel value={value} index={0}>
                 {description}
@@ -62,7 +65,20 @@ export default function ProjectTab({ description }: ProjectTabProps) {
 
             </TabPanel>
             <TabPanel value={value} index={2}>
-
+                <ImageList sx={{ width: '100%', height: '500px' }} cols={3} rowHeight={200}>
+                    {screenshots.map((item) => (
+                        <Zoom>
+                            <ImageListItem key={item.img}>
+                                <img
+                                    src={`${item.img}`}
+                                    srcSet={`${item.img}`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        </Zoom>
+                    ))}
+                </ImageList>
             </TabPanel>
         </Box>
     );

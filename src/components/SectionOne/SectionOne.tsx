@@ -35,13 +35,8 @@ const SectionOne: React.FC = () => {
                             </Typography>
                             <Avatar
                                 alt="Tom Dudzik"
-                                src="avatar_1.jpg"
+                                src="https://raw.githubusercontent.com/tomdud-developer/portfolio-website/gh-pages/avatar_1.jpg"
                                 sx={{width: '70%', height: "auto", border: '5px solid gold'}}
-                                sizes='100% width'
-                            />
-                            <img
-                                alt="Tom Dudzik"
-                                src="./avatar_1.jpg"
                                 sizes='100% width'
                             />
                             <Typography variant='h4' >Full-Stack Developer</Typography>

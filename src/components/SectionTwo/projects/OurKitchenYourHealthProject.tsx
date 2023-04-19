@@ -22,11 +22,18 @@ export default function OurKitchenYourHealthProject() {
       )
     }
 
+    const screenshots = [
+        {img: require('./../../../assets/images/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
+        {img: require('./../../../assets/images/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
+    ];
 
 
     return (
         <Container>
-            <ProjectTab description={description()} />
+            <ProjectTab
+                description={description()}
+                screenshots={screenshots}
+            />
         </Container>
     );
 }

@@ -11,6 +11,7 @@ import Box from '@mui/material/Box';
 import ProjectTab from "./projects/ProjectTab";
 import OurKitchenYourHealthProject from "./projects/OurKitchenYourHealthProject";
 import SpeedReadingAppProject from "./projects/SpeedReadingAppProject";
+import PlanetfanCalculatorProject from "./projects/PlanetfanCalculatorProject";
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -68,7 +69,7 @@ const SectionTwo: React.FC = () => {
                     flexGrow: 1,
                     bgcolor: 'background.paper',
                     //display: 'flex',
-                    height: 600,
+                    minHeight: 600,
                     padding: 2,
                     borderRadius: '20px',
                     boxShadow: '5px 5px 5px rgba(0, 0, 0, 0.3)',
@@ -99,21 +100,9 @@ const SectionTwo: React.FC = () => {
                         <SpeedReadingAppProject />
                     </TabPanel>
                     <TabPanel value={value} index={2}>
-                        Item Three
+                        <PlanetfanCalculatorProject />
+                    </TabPanel>
 
-                    </TabPanel>
-                    <TabPanel value={value} index={3}>
-                        Item Four
-                    </TabPanel>
-                    <TabPanel value={value} index={4}>
-                        Item Five
-                    </TabPanel>
-                    <TabPanel value={value} index={5}>
-                        Item Six
-                    </TabPanel>
-                    <TabPanel value={value} index={6}>
-                        Item Seven
-                    </TabPanel>
                 </Container>
             </Paper>
             </Slide>
