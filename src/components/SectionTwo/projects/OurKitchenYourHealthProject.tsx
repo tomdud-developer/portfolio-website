@@ -23,8 +23,7 @@ export default function OurKitchenYourHealthProject() {
     }
 
     const screenshots = [
-        {img: require('./../../../assets/images/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
-        {img: require('./../../../assets/images/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
+,
     ];
 
 

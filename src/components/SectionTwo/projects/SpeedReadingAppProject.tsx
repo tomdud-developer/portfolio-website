@@ -24,8 +24,8 @@ export default function SpeedReadingAppProject() {
     }
 
     const screenshots = [
-        {img: require('./../../../assets/images/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
-        {img: require('./../../../assets/images/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
+        {img: require('./../../../assets/images/PlanetfanCalculatorProject/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
+        {img: require('./../../../assets/images/PlanetfanCalculatorProject/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
     ];
 
     return (
