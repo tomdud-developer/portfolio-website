@@ -49,6 +49,6 @@ export const projects_DxfGenerator_description = "DxfGenerator is a specialized 
     "\n" +
     "In summary, DxfGenerator is a software tool that helps Planetfan automate the process of generating nameplates for its fans by extracting data from an Excel spreadsheet and converting it into a DXF file that can be used by CAM software and mechanical milling machines for engraving."
 
-
+export const projects_DxfGenerator_githubLink = "https://github.com/tomdud-developer/DxfGeneratorV2-public"
 
 

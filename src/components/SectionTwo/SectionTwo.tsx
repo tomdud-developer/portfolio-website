@@ -12,6 +12,7 @@ import ProjectTab from "./projects/ProjectTab";
 import OurKitchenYourHealthProject from "./projects/OurKitchenYourHealthProject";
 import SpeedReadingAppProject from "./projects/SpeedReadingAppProject";
 import PlanetfanCalculatorProject from "./projects/PlanetfanCalculatorProject";
+import DxfGeneratorProject from "./projects/DxfGeneratorProject";
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -88,10 +89,8 @@ const SectionTwo: React.FC = () => {
                         <StyledTab label="Our Kitchen Your Health" {...a11yProps(0)} />
                         <StyledTab label="Speed Reading App" {...a11yProps(1)} />
                         <StyledTab label="Planetfan Calculator" {...a11yProps(2)} />
-                        <StyledTab label="Item Four" {...a11yProps(3)} />
-                        <StyledTab label="Item Five" {...a11yProps(4)} />
-                        <StyledTab label="Item Six" {...a11yProps(5)} />
-                        <StyledTab label="Item Seven" {...a11yProps(6)} />
+                        <StyledTab label="Dxf Generator" {...a11yProps(3)} />
+                        <StyledTab label="Codewars" {...a11yProps(4)} />
                     </Tabs>
                     <TabPanel value={value} index={0}>
                         <OurKitchenYourHealthProject />
@@ -101,6 +100,9 @@ const SectionTwo: React.FC = () => {
                     </TabPanel>
                     <TabPanel value={value} index={2}>
                         <PlanetfanCalculatorProject />
+                    </TabPanel>
+                    <TabPanel value={value} index={3}>
+                        <DxfGeneratorProject />
                     </TabPanel>
 
                 </Container>

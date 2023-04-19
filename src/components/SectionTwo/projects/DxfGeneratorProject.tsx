@@ -2,11 +2,9 @@ import * as React from "react";
 import {Container} from "@mui/material";
 import ProjectTab from "./ProjectTab";
 import Typography from "@mui/material/Typography";
-import {projects_DxfGenerator_description} from '../../texts';
+import {projects_DxfGenerator_description, projects_DxfGenerator_githubLink} from '../../texts';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
-import {projects_PlanetfanCalculator_description_fetures_list} from '../../texts';
-import {projects_PlanetfanCalculator_githubLink} from '../../texts';
 
 
 export default function DxfGeneratorProject() {
@@ -17,10 +15,11 @@ export default function DxfGeneratorProject() {
                 {projects_DxfGenerator_description}
             </Typography>
             <Zoom>
-                <img src={require('./../../../assets/images/DxfGeneratorProject/20221027_085308.jpg')} width={'400px'}/>
+                <img src={require('./../../../assets/images/DxfGeneratorProject/Screenshot 2023-04-18 091554.png')} width={'500px'}/>
             </Zoom>
-            <Typography variant='h5' align='left'>Features:</Typography>
-            {projects_PlanetfanCalculator_description_fetures_list}
+            <Zoom>
+                <img src={require('./../../../assets/images/DxfGeneratorProject/20221027_085308.jpg')} width={'500px'}/>
+            </Zoom>
         </Container>
       )
     }
@@ -30,7 +29,9 @@ export default function DxfGeneratorProject() {
                 <ul>
                     <li>Java <img src='https://cdn.svgporn.com/logos/java.svg' alt='java_icon' height='50px'/></li>
                     <li>JavaFx</li>
-                    <li>costam dsx</li>
+                    <li>Java Graphics</li>
+                    <li>JDXF - Java DXF library</li>
+                    <li>Launch4j</li>
                 </ul>
             </Typography>
         )
@@ -58,7 +59,7 @@ export default function DxfGeneratorProject() {
                 description={description()}
                 screenshots={screenshots}
                 technologies={technologies()}
-                githubLink={projects_PlanetfanCalculator_githubLink}
+                githubLink={projects_DxfGenerator_githubLink}
             />
         </Container>
     );
