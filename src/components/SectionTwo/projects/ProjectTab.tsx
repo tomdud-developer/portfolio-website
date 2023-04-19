@@ -4,7 +4,9 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Typography from "@mui/material/Typography";
 import Zoom from "react-medium-image-zoom";
-import {ImageList, ImageListItem} from "@mui/material";
+import {Container, ImageList, ImageListItem, Link} from "@mui/material";
+import Stack from "@mui/material/Stack";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -33,10 +35,12 @@ function TabPanel(props: TabPanelProps) {
     );
 }
 interface ProjectTabProps {
-    screenshots: Array<any>;
     description: React.ReactNode;
+    technologies?: React.ReactNode;
+    screenshots?: Array<any>;
+    githubLink?: String;
 }
-export default function ProjectTab({description, screenshots}: ProjectTabProps) {
+export default function ProjectTab({description,technologies, screenshots, githubLink}: ProjectTabProps) {
 
     const [value, setValue] = React.useState(0);
 
@@ -44,6 +48,13 @@ export default function ProjectTab({description, screenshots}: ProjectTabProps) 
         setValue(newValue);
     };
 
+    const tabs = [
+        {icon: <GitHubIcon/>, name: "Description", value: 0},
+        {icon: <GitHubIcon/>, name: "Technologies", value: 1},
+        {icon: <GitHubIcon/>, name: "Screenshots", value: 2},
+        {icon: <GitHubIcon/>, name: "GitHub Repository", value: 3},
+        {}
+    ]
 
     return (
         <Box sx={{ width: '100%' }}>
@@ -55,18 +66,20 @@ export default function ProjectTab({description, screenshots}: ProjectTabProps) 
                 aria-label="secondary tabs"
             >
                 <Tab value={0} label="Description" />
-                <Tab value={1} label="Technologies" />
+                {technologies && <Tab value={1} label="Technologies" />}
                 <Tab value={2} label="Screenshots" />
+                {githubLink && <Tab value={3} label={<Stack><GitHubIcon/>GitHub Repository</Stack>} />}
             </Tabs>
             <TabPanel value={value} index={0}>
                 {description}
             </TabPanel>
-            <TabPanel value={value} index={1}>
+            {technologies && <TabPanel value={value} index={1}>
+                {technologies}
+            </TabPanel>}
 
-            </TabPanel>
-            <TabPanel value={value} index={2}>
+            {screenshots && screenshots.length && <TabPanel value={value} index={2}>
                 <ImageList sx={{ width: '100%', height: '500px' }} cols={3} rowHeight={200}>
-                    {screenshots.map((item) => (
+                    {screenshots?.map((item) => (
                         <Zoom>
                             <ImageListItem key={item.img}>
                                 <img
@@ -79,7 +92,18 @@ export default function ProjectTab({description, screenshots}: ProjectTabProps) 
                         </Zoom>
                     ))}
                 </ImageList>
-            </TabPanel>
+            </TabPanel>}
+
+            {githubLink && <TabPanel value={value} index={3}>
+                <Stack spacing={2}>
+                    <img src='https://cdn.svgporn.com/logos/github-icon.svg' alt='GitHub icon' height='100px' />
+                    <Link href={githubLink.toString()} target="_blank" rel="noopener" underline="hover">
+                        {githubLink}
+                    </Link>
+                </Stack>
+            </TabPanel>}
+
+
         </Box>
     );
 }

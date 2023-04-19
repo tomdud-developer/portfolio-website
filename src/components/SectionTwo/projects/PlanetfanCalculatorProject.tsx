@@ -9,6 +9,8 @@ import {projects_PlanetfanCalculator_description} from '../../texts';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 import {projects_PlanetfanCalculator_description_fetures_list} from '../../texts';
+import {projects_PlanetfanCalculator_githubLink} from '../../texts';
+
 
 export default function PlanetfanCalculatorProject() {
     const [value, setValue] = React.useState(0);
@@ -32,14 +34,33 @@ export default function PlanetfanCalculatorProject() {
       )
     }
 
+    const technologies = () => { return (
+            <Typography>
+                <ul>
+                    <li>Java <img src='https://cdn.svgporn.com/logos/java.svg' alt='java_icon' height='50px'/></li>
+                    <li>JavaFx</li>
+                    <li>Launch4j</li>
+                </ul>
+            </Typography>
+        )
+    }
+
     const screenshots = [
-        {img: require('./../../../assets/images/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
-        {img: require('./../../../assets/images/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
-        {img: require('./../../../assets/images/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
-        {img: require('./../../../assets/images/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
-        {img: require('./../../../assets/images/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
-        {img: require('./../../../assets/images/PlanetfanCalculatorProject_main_image.png'), title: 'Breakfast'},
-    ];
+            'PlanetfanCalculatorProject_main_image.png',
+            'Screenshot 2023-04-17 184851.png',
+            'Screenshot 2023-04-17 184856.png',
+            'Screenshot 2023-04-17 184900.png',
+            'Screenshot 2023-04-17 184903.png',
+            'Screenshot 2023-04-17 184913.png',
+            'Screenshot 2023-04-17 184917.png',
+            'Screenshot 2023-04-17 184922.png',
+            'Screenshot 2023-04-17 184926.png',
+            'Screenshot 2023-04-17 184928.png'
+        ].map((fileName) => {
+            return {
+                img: require(`./../../../assets/images/PlanetfanCalculatorProject/${fileName}`), title: fileName
+            }
+        })
 
 
 
@@ -48,6 +69,8 @@ export default function PlanetfanCalculatorProject() {
             <ProjectTab
                 description={description()}
                 screenshots={screenshots}
+                technologies={technologies()}
+                githubLink={projects_PlanetfanCalculator_githubLink}
             />
         </Container>
     );

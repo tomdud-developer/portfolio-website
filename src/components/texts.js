@@ -40,6 +40,7 @@ export const projects_PlanetfanCalculator_description_fetures_list =
         </ul>
     </Typography>
 
+export const projects_PlanetfanCalculator_githubLink = "https://github.com/tomdud-developer/PlanetfanCalculator-public";
 
 
 

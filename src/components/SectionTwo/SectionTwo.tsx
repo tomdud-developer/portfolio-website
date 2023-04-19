@@ -87,7 +87,7 @@ const SectionTwo: React.FC = () => {
                     >
                         <StyledTab label="Our Kitchen Your Health" {...a11yProps(0)} />
                         <StyledTab label="Speed Reading App" {...a11yProps(1)} />
-                        <StyledTab label="Item Three" {...a11yProps(2)} />
+                        <StyledTab label="Planetfan Calculator" {...a11yProps(2)} />
                         <StyledTab label="Item Four" {...a11yProps(3)} />
                         <StyledTab label="Item Five" {...a11yProps(4)} />
                         <StyledTab label="Item Six" {...a11yProps(5)} />
