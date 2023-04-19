@@ -7,6 +7,9 @@ import Zoom from "react-medium-image-zoom";
 import {Container, ImageList, ImageListItem, Link} from "@mui/material";
 import Stack from "@mui/material/Stack";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import DescriptionIcon from '@mui/icons-material/Description';
+import HandymanIcon from '@mui/icons-material/Handyman';
+import ScreenshotMonitorIcon from '@mui/icons-material/ScreenshotMonitor';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -49,12 +52,23 @@ export default function ProjectTab({description,technologies, screenshots, githu
     };
 
     const tabs = [
-        {icon: <GitHubIcon/>, name: "Description", value: 0},
-        {icon: <GitHubIcon/>, name: "Technologies", value: 1},
-        {icon: <GitHubIcon/>, name: "Screenshots", value: 2},
-        {icon: <GitHubIcon/>, name: "GitHub Repository", value: 3},
-        {}
-    ]
+        {icon: <DescriptionIcon sx={{marginRight: '5px'}}/>, name: "Description", value: 0, isAvailable: !!description},
+        {icon: <HandymanIcon sx={{marginRight: '5px'}}/>, name: "Technologies", value: 1, isAvailable: !!technologies},
+        {icon: <ScreenshotMonitorIcon sx={{marginRight: '5px'}}/>, name: "Screenshots", value: 2, isAvailable: !!screenshots},
+        {icon: <GitHubIcon sx={{marginRight: '5px'}}/>, name: "GitHub Repository", value: 3, isAvailable: !!githubLink},
+    ].filter(tab => tab.isAvailable).map(tab => {
+        return (
+            <Tab
+                value={tab.value}
+                label={
+                    <Stack direction="row" spacing={0} alignItems="center">
+                        {tab.icon}
+                        {tab.name}
+                    </Stack>
+                }
+            />
+        )
+    })
 
     return (
         <Box sx={{ width: '100%' }}>
@@ -65,11 +79,9 @@ export default function ProjectTab({description,technologies, screenshots, githu
                 indicatorColor="primary"
                 aria-label="secondary tabs"
             >
-                <Tab value={0} label="Description" />
-                {technologies && <Tab value={1} label="Technologies" />}
-                <Tab value={2} label="Screenshots" />
-                {githubLink && <Tab value={3} label={<Stack><GitHubIcon/>GitHub Repository</Stack>} />}
+                {tabs}
             </Tabs>
+
             <TabPanel value={value} index={0}>
                 {description}
             </TabPanel>
@@ -95,8 +107,9 @@ export default function ProjectTab({description,technologies, screenshots, githu
             </TabPanel>}
 
             {githubLink && <TabPanel value={value} index={3}>
-                <Stack spacing={2}>
-                    <img src='https://cdn.svgporn.com/logos/github-icon.svg' alt='GitHub icon' height='100px' />
+                <Stack spacing={2} sx={{alignItems:"center", justifyContent: "center", display:"flex"}}>
+                    {/*<img src='https://cdn.svgporn.com/logos/github-icon.svg' alt='GitHub icon' height='100px' />*/}
+                    <GitHubIcon sx={{fontSize: '100px'}} />
                     <Link href={githubLink.toString()} target="_blank" rel="noopener" underline="hover">
                         {githubLink}
                     </Link>

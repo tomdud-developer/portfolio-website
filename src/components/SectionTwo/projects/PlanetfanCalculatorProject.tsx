@@ -1,8 +1,5 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import {Container, ImageList, ImageListItem} from "@mui/material";
+import {Container} from "@mui/material";
 import ProjectTab from "./ProjectTab";
 import Typography from "@mui/material/Typography";
 import {projects_PlanetfanCalculator_description} from '../../texts';
@@ -13,12 +10,6 @@ import {projects_PlanetfanCalculator_githubLink} from '../../texts';
 
 
 export default function PlanetfanCalculatorProject() {
-    const [value, setValue] = React.useState(0);
-
-    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-        setValue(newValue);
-    };
-
 
     const description = () => { return (
         <Container>
@@ -26,7 +17,7 @@ export default function PlanetfanCalculatorProject() {
                 {projects_PlanetfanCalculator_description}
             </Typography>
             <Zoom>
-                <img src={require('./../../../assets/images/PlanetfanCalculatorProject_main_image.png')} width={'400px'}/>
+                <img src={require('./../../../assets/images/PlanetfanCalculatorProject/PlanetfanCalculatorProject_main_image.png')} width={'400px'}/>
             </Zoom>
             <Typography variant='h5' align='left'>Features:</Typography>
             {projects_PlanetfanCalculator_description_fetures_list}
@@ -61,8 +52,6 @@ export default function PlanetfanCalculatorProject() {
                 img: require(`./../../../assets/images/PlanetfanCalculatorProject/${fileName}`), title: fileName
             }
         })
-
-
 
     return (
         <Container>
