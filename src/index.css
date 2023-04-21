@@ -36,16 +36,3 @@ code {
 .root {
   min-width: 100%;
 }
-
-@media screen and (min-width: 400px) {
-  body {
-    background-color: lightgreen;
-  }
-}
-
-/* For screen size less than 600px */
-@media screen and (max-width: 600px) {
-  body {
-    background-color: lavender;
-  }
-}

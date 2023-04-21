@@ -14,13 +14,13 @@ export const projects_SpeedReadingApp_description = <Typography><GitHubIcon /> K
 
 
 export const projects_PlanetfanCalculator_description =
-    <Typography>
+    <>
         PlanetfanCalculator is a project developed for the internal needs of the Planetfan (<Link href='https://planetfan.pl'>https://planetfan.pl/</Link>) company. This calculator has been designed to assist Planetfan's engineers, architects, and contractors in converting values related to fans, densities, noise, flow, and engine power.
         The calculator simplifies the conversion process, making it quicker and more efficient for the team to work with. By providing accurate results, Planetfan can optimize their ventilation systems and deliver the best possible solutions to their clients.
-    </Typography>
+    </>
 
 export const projects_PlanetfanCalculator_description_fetures_list =
-    <Typography>
+    <>
         <ul>
             <li>Scaling fan parameters</li>
             <li>Calculating air density by three methods</li>
@@ -41,7 +41,7 @@ export const projects_PlanetfanCalculator_description_fetures_list =
             <li>Calculating flow efficiency</li>
             <li>Calculating electricity power of motor by known current</li>
         </ul>
-    </Typography>
+    </>
 
 export const projects_PlanetfanCalculator_githubLink = "https://github.com/tomdud-developer/PlanetfanCalculator-public";
 
@@ -98,7 +98,7 @@ export const projects_OurKitchenYourHealthProject_description3 = "To ensure high
     " the use of microservices in Java provides a reliable and efficient framework to develop a robust backend system."
 
 export const projects_OurKitchenYourHealthProject_requirements =
-    <>
+    <Typography>
         The customer is the owner of approximately 100 restaurants and serves daily diet meals over the phone. The demand for their services has consistently increased, and as a result, they require reliable software support to manage these orders. The orders should be taken on a website, where clients can potentially choose their preferred meals for each day. The restaurant location, which will serve the meals, should be assigned based on the client's domicile.
         <br/><br/>
         The dietetics team should have the option to compose meals by adding ingredients and substances. These meals should be available for every client at any location.
@@ -108,4 +108,4 @@ export const projects_OurKitchenYourHealthProject_requirements =
         Once a client places an order, they must confirm it by clicking a link in an email message. Upon confirmation, they can proceed to make the payment via PayU. After a successful payment, the order status will be updated to "success payment" and can be processed for realization.
         <br/><br/>
         To ensure the smooth running of operations, the restaurants must have a daily list of ingredients and meals that they need to order and prepare for the following day. This practice allows for proper planning and organization of resources, ensuring that the restaurants are adequately stocked and prepared to meet the demands of their customers.
-    </>
+    </Typography>

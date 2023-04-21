@@ -5,8 +5,8 @@ import Stack from '@mui/material/Stack';
 import Box from "@mui/material/Box";
 import {createTheme, ThemeProvider} from "@mui/material/styles";
 import {blue, grey, red, teal, yellow} from "@mui/material/colors";
-import SectionOne from "./components/SectionOne/SectionOne";
-import SectionTwo from "./components/SectionTwo/SectionTwo";
+import AboutMeSection from "./components/AboutMeSection/AboutMeSection";
+import ProjectSection from "./components/SectionTwo/ProjectSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 import {Container, Slide} from "@mui/material";
 
@@ -103,10 +103,10 @@ function App() {
                     }
                 >
                     <Box>
-                        <SectionOne />
+                        <AboutMeSection />
                     </Box>
                     <Box>
-                        <SectionTwo />
+                        <ProjectSection />
                     </Box>
 
 

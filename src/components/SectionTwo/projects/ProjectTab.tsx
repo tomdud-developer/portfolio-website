@@ -30,7 +30,7 @@ function TabPanel(props: TabPanelProps) {
             sx={{width: '100%'}}
         >
             {value === index && (
-                <Box sx={{ p: 3 }}>
+                <Box sx={{ p: 1, }}>
                     <Typography variant='h5'>{children}</Typography>
                 </Box>
             )}

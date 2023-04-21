@@ -19,9 +19,9 @@ const Item = styled(Paper)(({ theme }) => ({
     boxShadow: '5px 5px 5px rgba(0, 0, 0, 0.3)',
 }));
 //sx={{alignItems:"center", justifyContent: "center", display:"flex"}}
-const SectionOne: React.FC = () => {
+const AboutMeSection: React.FC = () => {
     return (
-        <Container sx={{maxWidth: "90%", minWidth: "90%"}}>
+        <Container sx={{maxWidth: "95%", minWidth: "95%"}}>
             {//<Typography variant='h2' margin='10px'>About me</Typography>
             }
             <Grid container spacing={5} columns={{xs: 5, sm: 5, md: 10}}>
@@ -55,6 +55,10 @@ const SectionOne: React.FC = () => {
                             <Typography >
                                 {aboutMeText}
                             </Typography>
+                            <Typography variant='h4'>Future plans</Typography>
+                            <Typography>
+
+                            </Typography>
                         </Stack>
                     </Item>
                     </Slide>
@@ -64,4 +68,4 @@ const SectionOne: React.FC = () => {
     );
 };
 
-export default SectionOne;
+export default AboutMeSection;

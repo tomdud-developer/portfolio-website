@@ -30,7 +30,7 @@ function TabPanel(props: TabPanelProps) {
             id={`vertical-tabpanel-${index}`}
             aria-labelledby={`vertical-tab-${index}`}
             {...other}
-            sx={{width: '100%'}}
+            sx={{width: '80%'}}
         >
             {value === index && (
                 <Box sx={{ p: 3 }}>
@@ -54,7 +54,7 @@ export const StyledTab = styled(Tab)(({ theme }) => ({
     fontSize: '16px',
 }));
 
-const SectionTwo: React.FC = () => {
+const ProjectSection: React.FC = () => {
 
     const [value, setValue] = React.useState(0);
 
@@ -63,28 +63,29 @@ const SectionTwo: React.FC = () => {
     };
 
     return (
-        <Container sx={{maxWidth: "90%", minWidth: "90%", marginTop: "50px"}}>
+        <Container sx={{maxWidth: "95%", minWidth: "95%", marginTop: "50px"}}>
             <Slide direction="down" in={true} style={{ transitionDelay: '300ms', transitionDuration: '2000ms'}} mountOnEnter unmountOnExit>
             <Paper
                 sx={{
                     flexGrow: 1,
                     bgcolor: 'background.paper',
                     //display: 'flex',
-                    minHeight: 600,
-                    padding: 2,
+                    minHeight: 800,
+                    width: '100%',
+                    padding: 1,
                     borderRadius: '20px',
                     boxShadow: '5px 5px 5px rgba(0, 0, 0, 0.3)',
                 }}
             >
                 <Typography variant='h2' width='100%' margin='10px'>Projects</Typography>
-                <Container sx={{display: 'flex',}}>
+                <Container sx={{display: 'flex', width: '100%', maxWidth: '100%', minWidth: '100%'}}>
                     <Tabs
                         orientation="vertical"
                         variant="scrollable"
                         value={value}
                         onChange={handleChange}
                         aria-label="Vertical tabs"
-                        sx={{ borderRight: 1, borderColor: 'divider' }}
+                        sx={{ borderRight: 1, borderColor: 'divider', width: '20%' }}
                     >
                         <StyledTab label="Our Kitchen Your Health" {...a11yProps(0)} />
                         <StyledTab label="Speed Reading App" {...a11yProps(1)} />
@@ -112,4 +113,4 @@ const SectionTwo: React.FC = () => {
     );
 };
 
-export default SectionTwo;
+export default ProjectSection;

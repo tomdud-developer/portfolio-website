@@ -32,7 +32,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const ContactSection: React.FC = () => {
     return (
-        <Container sx={{ paddingTop: '50px', paddingBottom: '50px', width: '90%', maxWidth: '90%', minWidth: '90%' }}>
+        <Container sx={{ paddingTop: '50px', paddingBottom: '50px', width: '95%', maxWidth: '95%', minWidth: '95%' }}>
             <Slide direction="down" in={true} style={{ transitionDelay: '300ms', transitionDuration: '1500ms'}} mountOnEnter unmountOnExit>
             <Item>
                 <Typography variant="h4" component="h2" sx={{ mb: 2 }}>

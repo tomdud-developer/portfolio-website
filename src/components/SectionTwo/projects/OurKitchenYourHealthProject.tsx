@@ -105,7 +105,9 @@ export default function OurKitchenYourHealthProject() {
     }
 
     const screenshots = [
-        'Architecture_diagram.svg'
+        'Architecture_diagram.svg',
+        'Screenshot 2023-04-21 120034.png',
+        'Screenshot 2023-04-21 120050.png',
     ].map((fileName) => {
         return {
             img: require(`./../../../assets/images/OurKitchenYourHealthProject/${fileName}`), title: fileName
