@@ -106,7 +106,6 @@ export default function SpeedReadingAppProject() {
         "Tests_Coverage_raport.png",
         "Tests_raport.png",
         "theme_colors.png"
-
     ].map((fileName) => {
         return {
             img: require(`./../../../assets/images/SpeedReadingAppProject/${fileName}`), title: fileName

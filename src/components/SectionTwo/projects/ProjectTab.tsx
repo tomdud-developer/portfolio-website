@@ -60,6 +60,7 @@ export default function ProjectTab({description,technologies, screenshots, githu
     ].filter(tab => tab.isAvailable).map(tab => {
         return (
             <Tab
+                key={"Tab-" + tab.name + tab.value}
                 value={tab.value}
                 label={
                     <Stack direction="row" spacing={0} alignItems="center">
@@ -93,8 +94,8 @@ export default function ProjectTab({description,technologies, screenshots, githu
             {screenshots && screenshots.length && <TabPanel value={value} index={2}>
                 <ImageList sx={{ width: '100%', height: '500px' }} cols={3} rowHeight={200}>
                     {screenshots?.map((item) => (
-                        <Zoom>
-                            <ImageListItem key={item.img}>
+                        <Zoom key={"ZoomInScreenshotsSection-" + item.img}>
+                            <ImageListItem key={"ImageListItem-" + item.img}>
                                 <img
                                     src={`${item.img}`}
                                     srcSet={`${item.img}`}

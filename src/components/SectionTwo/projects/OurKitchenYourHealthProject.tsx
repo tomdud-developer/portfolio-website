@@ -3,7 +3,10 @@ import {Container, Link} from "@mui/material";
 import ProjectTab from "./ProjectTab";
 import Typography from "@mui/material/Typography";
 import {
-    projects_OurKitchenYourHealthProject_description, projects_OurKitchenYourHealthProject_githubLink,
+    projects_OurKitchenYourHealthProject_description,
+    projects_OurKitchenYourHealthProject_description2,
+    projects_OurKitchenYourHealthProject_description3,
+    projects_OurKitchenYourHealthProject_githubLink, projects_OurKitchenYourHealthProject_requirements,
 } from '../../texts';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
@@ -17,7 +20,40 @@ export default function OurKitchenYourHealthProject() {
             <Typography>
                 {projects_OurKitchenYourHealthProject_description}
             </Typography>
+            <br/>
+            <Typography>
+                {projects_OurKitchenYourHealthProject_description2}
+            </Typography>
 
+            <Typography variant='h5' align='left' marginTop='20px' color='primary'>About tech stack:</Typography>
+            <Typography>
+                {projects_OurKitchenYourHealthProject_description3}
+            </Typography>
+
+            <Typography variant='h5' align='left' marginTop='20px' color='primary'>Architecture</Typography>
+            <ol style={{textAlign: 'left'}}>
+                <li>API gateway service</li>
+                <li>Eureka discovery server</li>
+                <li>Keycloak auth service</li>
+                <li>Meals microservice</li>
+                <li>Orders microservice</li>
+                <li>Payment microservice</li>
+                <li>Restaurant microservice</li>
+                <li>Resources microservice [not done yet]</li>
+                <li>[There will be anothers, but they haven't developed yet]</li>
+            </ol>
+            <Zoom>
+                <img
+                    src={require('./../../../assets/images/OurKitchenYourHealthProject/Architecture_diagram_screenshot.png')}
+                    width={'400px'}
+                    alt={'OurKitchenYourHealthProject_architecture'}
+                />
+            </Zoom>
+
+            <Typography variant='h5' align='left' marginTop='20px' color='primary'>Requirements</Typography>
+            <Typography>
+                {projects_OurKitchenYourHealthProject_requirements}
+            </Typography>
 
         </Container>
     )
@@ -69,12 +105,12 @@ export default function OurKitchenYourHealthProject() {
     }
 
     const screenshots = [
-
+        'Architecture_diagram.svg'
     ].map((fileName) => {
         return {
-            img: require(`./../../../assets/images/SpeedReadingAppProject/${fileName}`), title: fileName
+            img: require(`./../../../assets/images/OurKitchenYourHealthProject/${fileName}`), title: fileName
         }
-    })
+    });
 
     return (
         <Container>
