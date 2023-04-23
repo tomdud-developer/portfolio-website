@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.051d7556.css",
-    "main.js": "/portfolio-website/static/js/main.3861b182.js",
+    "main.css": "/portfolio-website/static/css/main.4bbc6c85.css",
+    "main.js": "/portfolio-website/static/js/main.1e4fe03d.js",
     "static/js/787.749b4a44.chunk.js": "/portfolio-website/static/js/787.749b4a44.chunk.js",
     "static/media/20221018_151009.jpg": "/portfolio-website/static/media/20221018_151009.bec40c18aca75d9167b1.jpg",
     "static/media/20221027_085308.jpg": "/portfolio-website/static/media/20221027_085308.ef1b80ecd8c4830eedee.jpg",
@@ -22,7 +22,6 @@
     "static/media/database_erd_diagram.png": "/portfolio-website/static/media/database_erd_diagram.4e8b24682888da3d0b24.png",
     "static/media/Tests_Coverage_raport.png": "/portfolio-website/static/media/Tests_Coverage_raport.eb72e88cab299d4d82c9.png",
     "static/media/Courgette-Regular.ttf": "/portfolio-website/static/media/Courgette-Regular.f99d9948a486f6270149.ttf",
-    "static/media/Architecture_diagram.png": "/portfolio-website/static/media/Architecture_diagram.7f956b5d16d8f2f3269b.png",
     "static/media/Screenshot 2023-04-17 184900.png": "/portfolio-website/static/media/Screenshot 2023-04-17 184900.3eda0cbc287b0ac67e59.png",
     "static/media/Screenshot 2023-04-17 184922.png": "/portfolio-website/static/media/Screenshot 2023-04-17 184922.db513552945aaf60c214.png",
     "static/media/Screenshot 2023-04-18 101624.png": "/portfolio-website/static/media/Screenshot 2023-04-18 101624.9b978b21e07629660760.png",
@@ -30,11 +29,13 @@
     "static/media/Screenshot 2023-04-17 184903.png": "/portfolio-website/static/media/Screenshot 2023-04-17 184903.f0af530e26402cace3f0.png",
     "static/media/Architecture_diagram_screenshot.png": "/portfolio-website/static/media/Architecture_diagram_screenshot.eb284e364fd4ef97c9a3.png",
     "static/media/Screenshot 2023-04-17 184917.png": "/portfolio-website/static/media/Screenshot 2023-04-17 184917.3111e3b658dddceddd3c.png",
+    "static/media/Screenshot 2023-04-21 120034.png": "/portfolio-website/static/media/Screenshot 2023-04-21 120034.6ffcdd8d7c36df6166a0.png",
     "static/media/Screenshot 2023-04-17 184928.png": "/portfolio-website/static/media/Screenshot 2023-04-17 184928.2b48d32cab43652e90c8.png",
     "static/media/Lato-Regular.ttf": "/portfolio-website/static/media/Lato-Regular.633ffe4a4b5b7277cc35.ttf",
     "static/media/PlanetfanCalculatorProject_main_image.png": "/portfolio-website/static/media/PlanetfanCalculatorProject_main_image.ebdedb211da1ad536bff.png",
     "static/media/Screenshot 2023-04-17 184851.png": "/portfolio-website/static/media/Screenshot 2023-04-17 184851.ebdedb211da1ad536bff.png",
     "static/media/Screenshot 2023-04-18 091320.png": "/portfolio-website/static/media/Screenshot 2023-04-18 091320.b4f8764886f41a9ceba3.png",
+    "static/media/Screenshot 2023-04-21 120050.png": "/portfolio-website/static/media/Screenshot 2023-04-21 120050.f95687ba136fc3950f84.png",
     "static/media/Screenshot 2023-04-18 091554.png": "/portfolio-website/static/media/Screenshot 2023-04-18 091554.c0168bbd7e99a9154599.png",
     "static/media/Architecture_diagram.svg": "/portfolio-website/static/media/Architecture_diagram.eb10647dbd6c401307b5.svg",
     "static/media/Screenshot 2023-04-17 184856.png": "/portfolio-website/static/media/Screenshot 2023-04-17 184856.37b8353d929e2ad79433.png",
@@ -46,12 +47,12 @@
     "static/media/Screenshot 2023-04-18 101641.png": "/portfolio-website/static/media/Screenshot 2023-04-18 101641.7878ced0ba5a812e1c21.png",
     "static/media/Screenshot 2023-04-18 102008.png": "/portfolio-website/static/media/Screenshot 2023-04-18 102008.6fa0854c8d0ad101d4dc.png",
     "index.html": "/portfolio-website/index.html",
-    "main.051d7556.css.map": "/portfolio-website/static/css/main.051d7556.css.map",
-    "main.3861b182.js.map": "/portfolio-website/static/js/main.3861b182.js.map",
+    "main.4bbc6c85.css.map": "/portfolio-website/static/css/main.4bbc6c85.css.map",
+    "main.1e4fe03d.js.map": "/portfolio-website/static/js/main.1e4fe03d.js.map",
     "787.749b4a44.chunk.js.map": "/portfolio-website/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.051d7556.css",
-    "static/js/main.3861b182.js"
+    "static/css/main.4bbc6c85.css",
+    "static/js/main.1e4fe03d.js"
   ]
 }
