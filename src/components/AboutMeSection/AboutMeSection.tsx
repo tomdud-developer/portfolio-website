@@ -6,7 +6,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import {Avatar, Container, Divider, Hidden, Slide} from "@mui/material";
 import Stack from "@mui/material/Stack";
-import {aboutMeText} from "../texts";
+import {aboutMeFuturePlans, aboutMeText} from "../texts";
 
 
 
@@ -55,9 +55,9 @@ const AboutMeSection: React.FC = () => {
                             <Typography >
                                 {aboutMeText}
                             </Typography>
-                            <Typography variant='h4'>Future plans</Typography>
+                            <Typography variant='h5' textAlign='left'>Future plans</Typography>
                             <Typography>
-
+                                {aboutMeFuturePlans}
                             </Typography>
                         </Stack>
                     </Item>
