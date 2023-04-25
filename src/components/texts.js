@@ -2,18 +2,20 @@ import Typography from "@mui/material/Typography";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import {Link} from "@mui/material";
 import OurKitchenYourHealthProject from "./SectionTwo/projects/OurKitchenYourHealthProject";
+import * as React from "react";
 
 
 export const aboutMeText = <>
-    I'm a 23-year-old <strong>Computer Science student</strong> at Silesian University of Technology.<span role="img" aria-label="dog">🐕</span> I also hold an <strong>engineering degree</strong> in Automatic and Robotic Control from the same institution.
+    I'm a 23-year-old <strong>Computer Science student👨‍🎓</strong> at Silesian University of Technology. I also hold an <strong>engineering degree📜</strong> in Automatic and Robotic Control from the same institution.
 
-    For the past three years, I have been immersing myself in the world of programming, with a particular <strong>focus on Java backend development</strong>, but as well as some exposure to <strong>React.js</strong>. While I started my programming journey with C++, it wasn't long before I fell in love with <strong>Java</strong>. Currently, I'm honing my skills in Java <strong>microservices</strong> architecture and working on personal projects to further develop my abilities.
+    For the past three years, I have been immersing myself in the world of programming, with a particular <strong>focus on <img src='https://cdn.svgporn.com/logos/java.svg' alt='java_icon' height='25px'/>Java backend development</strong>, but as well as some exposure to <strong>React.js</strong>. While I started my programming journey with C++, it wasn't long before I fell in love with <strong>❤️<img src='https://cdn.svgporn.com/logos/java.svg' alt='java_icon' height='25px'/>Java</strong>. Currently, I'm honing my skills in Java <strong>microservices</strong> architecture and working on personal projects to further develop my abilities.
 
-    My technology stack includes Java, along with various tools and frameworks used in backend microservices development. I'm passionate about building scalable and efficient software solutions, and I'm always seeking out new challenges to help me expand my knowledge and expertise.
+    My technology stack includes <img src='https://cdn.svgporn.com/logos/java.svg' alt='java_icon' height='25px'/>Java, along with various tools and frameworks used in backend microservices development. I'm passionate about building scalable and efficient software solutions, and I'm always seeking out new challenges to help me expand my knowledge and expertise.
 </>
 
 export const aboutMeFuturePlans = <>
-
+    I am currently 🔎looking for an <strong>internship</strong> for the position of Junior Java Backend Developer. I feel that is a good moment to start my IT career, because it's the perfect way to take it my programming to the next ⭐level.
+    In the near future, my goal is to become an <strong>expert</strong> in backend development, with a strong focus on mastering microservices, cloud technology, and Kubernetes. I am eager to expand my knowledge and skills in these areas to develop efficient and scalable applications.
 </>
 export const projects_OurKitchenYourHealth_description = "Our Kitchen - Your Health is a abstract company, which offer fresh food catering." +
     " They make your fresh, healthy meals and deliver to your house. This company need a strong, reliable system to: makes orders, manage orders, manage customers," +
