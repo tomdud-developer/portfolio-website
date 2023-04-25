@@ -59,7 +59,7 @@ const ContactSection: React.FC = () => {
                     <Grid item xs={12} sm={6}>
                         <Stack direction="row" alignItems="center" spacing={2} sx={{alignItems:"center", justifyContent: "center", display:"flex"}}>
                             <LinkedInIcon />
-                            <Link href="www.linkedin.com/in/tomasz-dudzik-4675a8273" target="_blank" rel="noopener" underline="hover">
+                            <Link href="https://linkedin.com/in/tomasz-dudzik-4675a8273" target="_blank" rel="noopener" underline="hover">
                                 LinkedIn profile
                             </Link>
                         </Stack>
