@@ -55,7 +55,7 @@ const AboutMeSection: React.FC = () => {
                             <Typography >
                                 {aboutMeText}
                             </Typography>
-                            <Typography variant='h5' textAlign='left'>Future plans</Typography>
+                            <Typography variant='h5' textAlign='left'>My plans</Typography>
                             <Typography>
                                 {aboutMeFuturePlans}
                             </Typography>

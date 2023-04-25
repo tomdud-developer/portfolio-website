@@ -5,9 +5,9 @@ import OurKitchenYourHealthProject from "./SectionTwo/projects/OurKitchenYourHea
 
 
 export const aboutMeText = <>
-    I'm a 23-year-old Computer Science student at Silesian University of Technology.<span role="img" aria-label="dog">🐕</span> I also hold an engineering degree in Automatic and Robotic Control from the same institution.
+    I'm a 23-year-old <strong>Computer Science student</strong> at Silesian University of Technology.<span role="img" aria-label="dog">🐕</span> I also hold an <strong>engineering degree</strong> in Automatic and Robotic Control from the same institution.
 
-    For the past three years, I have been immersing myself in the world of programming, with a particular focus on Java backend development, but as well as some exposure to React.js. While I started my programming journey with C++, it wasn't long before I fell in love with Java. Currently, I'm honing my skills in Java microservices architecture and working on personal projects to further develop my abilities.
+    For the past three years, I have been immersing myself in the world of programming, with a particular <strong>focus on Java backend development</strong>, but as well as some exposure to <strong>React.js</strong>. While I started my programming journey with C++, it wasn't long before I fell in love with <strong>Java</strong>. Currently, I'm honing my skills in Java <strong>microservices</strong> architecture and working on personal projects to further develop my abilities.
 
     My technology stack includes Java, along with various tools and frameworks used in backend microservices development. I'm passionate about building scalable and efficient software solutions, and I'm always seeking out new challenges to help me expand my knowledge and expertise.
 </>
