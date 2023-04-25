@@ -9,6 +9,7 @@ import AboutMeSection from "./components/AboutMeSection/AboutMeSection";
 import ProjectSection from "./components/SectionTwo/ProjectSection";
 import ContactSection from "./components/ContactSection/ContactSection";
 import {Container, Slide} from "@mui/material";
+import CvSection from "./components/CVsection/CvSection";
 
 const theme = createTheme({
     palette: {
@@ -108,7 +109,9 @@ function App() {
                     <Box>
                         <ProjectSection />
                     </Box>
-
+                    <Box>
+                        <CvSection/>
+                    </Box>
 
                     <ContactSection />
 
