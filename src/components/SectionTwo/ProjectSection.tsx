@@ -13,6 +13,7 @@ import OurKitchenYourHealthProject from "./projects/OurKitchenYourHealthProject"
 import SpeedReadingAppProject from "./projects/SpeedReadingAppProject";
 import PlanetfanCalculatorProject from "./projects/PlanetfanCalculatorProject";
 import DxfGeneratorProject from "./projects/DxfGeneratorProject";
+import CodeWarsProject from "./projects/CodeWarsProject";
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -105,7 +106,9 @@ const ProjectSection: React.FC = () => {
                     <TabPanel value={value} index={3}>
                         <DxfGeneratorProject />
                     </TabPanel>
-
+                    <TabPanel value={value} index={4}>
+                        <CodeWarsProject />
+                    </TabPanel>
                 </Container>
             </Paper>
             </Slide>

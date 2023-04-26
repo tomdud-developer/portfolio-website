@@ -36,7 +36,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const onDownload = () => {
     const link = document.createElement("a");
     link.download = `Tomasz_Dudzik_CV.pdf`;
-    link.href = "/Tomasz_Dudzik_CV.pdf";
+    link.href = "Tomasz_Dudzik_CV.pdf";
     link.click();
 };
 

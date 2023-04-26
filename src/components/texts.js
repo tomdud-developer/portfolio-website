@@ -120,3 +120,14 @@ export const projects_OurKitchenYourHealthProject_requirements =
         <br/><br/>
         To ensure the smooth running of operations, the restaurants must have a daily list of ingredients and meals that they need to order and prepare for the following day. This practice allows for proper planning and organization of resources, ensuring that the restaurants are adequately stocked and prepared to meet the demands of their customers.
     </Typography>
+
+
+export const projects_CodeWars_description = <>
+    This is a repository where I keep my Java solutions for the coding challenges on CodeWars.
+    <br/><br/>
+    CodeWars is a web-based platform for practicing and improving programming skills through the completion of coding challenges called "Katas." A Kata is a coding challenge that presents a problem for the user to solve using their programming skills. Each Kata is accompanied by a set of requirements, such as input/output specifications and constraints on the running time and space complexity of the solution. The user is then tasked with writing code that satisfies these requirements and passes a set of automated tests.
+    <br/><br/>
+    The difficulty level of each Kata is determined by its "kyu" rating, with lower ratings indicating easier challenges and higher ratings indicating more difficult challenges. The Kyu ratings range from 8 Kyu (the easiest) to 1 Kyu (the most difficult).
+</>
+
+export const projects_CodeWars_githubLink = "https://github.com/tomdud-developer/CodeWars";
