@@ -78,7 +78,7 @@ const ProjectSection: React.FC = () => {
                     boxShadow: '5px 5px 5px rgba(0, 0, 0, 0.3)',
                 }}
             >
-                <Typography variant='h2' width='100%' margin='10px'>Projects</Typography>
+                <Typography variant='h2' width='100%' margin='10px'>Projects - a little outdated list, i will update this soon, for now check my CV</Typography>
                 <Container sx={{display: 'flex', width: '100%', maxWidth: '100%', minWidth: '100%'}}>
                     <Tabs
                         orientation="vertical"
